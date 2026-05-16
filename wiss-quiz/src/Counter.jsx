@@ -6,16 +6,19 @@ function Counter() {
 
   const erhoehen = () => {
     setCount(count + 1);
+    setGesamtClicks(gesamtClicks + 1);
   };
 
   const verringern = () => {
     if (count > 0) {
     setCount(count - 1);
+    setGesamtClicks(gesamtClicks + 1);
     }
   };
 
   const reset = () => {
     setCount(0);
+    setGesamtClicks(gesamtClicks + 1);
   };
 
   const toggle = () => {
