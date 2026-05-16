@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Color</title>
+        <autor>Nicola Schmied</autor>
+        <version>1.0</version>
+        <description>Aufgabe 2.0: Change Color</description>
+    </head>
+    <body>
+        <h1>JavaScript</h1>
+        <h2>The onclick Event</h2>
+        <p id="demo">Click the button to change the layout of this paragraph</p>
+
+        <button onclick="myFunction()">Click Me!</button>
+
+        <button onclick="mySecondFunction()">Click Me if you have the Balls to !</button>
+        
+        <script>
+            function myFunction() {
+            let x = document.getElementById("demo");
+            x.style.fontSize = "25px"; 
+            x.style.color = "red"; 
+            }
+            
+            function mySecondFunction() {
+            let x = document.getElementById("demo");
+            x.style.fontSize = "40px"; 
+            x.style.color = "blue"; 
+            x.style.fontFamily = "goblin one";
+            x.innerHTML = "Selam du Peach!!!";
+            }
+
+        </script>
+
+    </body>
+</html>
